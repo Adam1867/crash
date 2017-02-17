@@ -1,0 +1,62 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700');
+
+@import 'styles/vars';
+
+@import 'styles/components/scoreBoard';
+
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  color: #414449;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.Header {
+  align-items: center;
+  background-color: #414449;
+  display: flex;
+  font-size: 1rem;
+  justify-content: flex-end;
+  height: 60px;
+  padding: 15px;
+
+  .btn {
+    background-color: $green;
+    border-radius: 4px;
+    color: #FFF;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: tint($green, 10%);
+    }
+  }
+}
+
+/**
+ * Game Setup
+ */
+.StakePicker .radio {
+  border: 1px solid #e3e6e9;
+  border-radius: 3px;
+  display: inline-block;
+}
+.StakePicker .radio.checked {
+  background-color: #414851;
+  color: white;
+}
+.StakePicker .radio input {
+  display: none;
+}
+.StakePicker .radio label {
+  cursor: pointer;
+  display: block;
+  padding: 8px 12px;
+}
